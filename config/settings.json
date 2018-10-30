@@ -1,0 +1,7 @@
+{
+  "sonarqubeUrl": "http://example.com",
+  "sonarqubeUserName": "xxx",
+  "sonarqubePassword": "yyy",
+  "gitlabUrl": "http://example.com",
+  "gitlabPrivateAccessToken": "zzz"
+}

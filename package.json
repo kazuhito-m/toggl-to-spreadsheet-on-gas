@@ -1,0 +1,60 @@
+{
+  "name": "toggl-to-spreadsheet-on-gas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack",
+    "build_run": "webpack && node dist/bundle.js",
+    "run_only": "node dist/bundle.js -s ./config/settings.json -a ./config/aliases.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "webpack"
+  ],
+  "author": "kazuhito_m",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas/issues"
+  },
+  "homepage": "https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas#readme",
+  "devDependencies": {
+    "@google/clasp": "^1.6.3",
+    "@types/commander": "^2.12.2",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.1",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "source-map-support": "^0.5.9",
+    "ts-jest": "^23.10.4",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.5",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/tests/**/*.ts"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  }
+}
