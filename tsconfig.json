@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-    "strictNullChecks": true,
-    "noUnusedLocals" : true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "outDir": "./dist/",
-    // "sourceMap": true,
-    "inlineSourceMap": true,
-    "noImplicitAny": true,
-    "lib": ["dom", "es2017"],
     "module": "commonjs",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "alwaysStrict": true,
+    "baseUrl": "./",
+    "lib": ["dom", "es2017"],
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    // "inlineSourceMap": true,
+    "noImplicitAny": true,
     "target": "es5"
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }

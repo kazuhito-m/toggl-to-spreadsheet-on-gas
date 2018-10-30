@@ -1,21 +1,23 @@
+const GasPlugin = require('gas-webpack-plugin');
+const es3ifyPlugin = require('es3ify-webpack-plugin');
+
 module.exports = {
-  mode: 'production',
-  entry: __dirname + "/src/index.ts", //ビルドするファイル
+  entry: './src/index.ts',
   output: {
-    path: __dirname + '/dist', //ビルドしたファイルを吐き出す場所
-    filename: 'bundle.js' //ビルドした後のファイル名
+    path: __dirname + '/dist',
+    filename: 'bundle.js'
   },
   devtool: 'inline-source-map',
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts'],
   },
-  devtool: 'source-map',
   module: {
-    rules: [{
-      test: /\.ts?$/,
-      use: 'ts-loader',
-      exclude: /node_modules/
-    }]
+    rules: [
+      { test: /\.ts?$/, loader: 'awesome-typescript-loader' },
+    ],
   },
-  target: 'node'
-}
+  plugins: [
+    new GasPlugin(),
+    new es3ifyPlugin(),
+  ],
+};
