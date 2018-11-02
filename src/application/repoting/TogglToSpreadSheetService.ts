@@ -1,9 +1,16 @@
 import Settings from '../../domain/config/Settings';
+import TogglRepository from '../../domain/toggl/TogglRepository';
+import SpreadSheetRepoitory from 'src/domain/spreadsheet/SpreadSheetRepoitory';
 
 export default class TogglToSpreadSheetService {
-  constructor(settings: Settings) {}
+  constructor(
+    private readonly togglRepository: TogglRepository,
+    private readonly spreadSheetRepoitory: SpreadSheetRepoitory,
+    private readonly settings: Settings,
+  ) {}
 
   public export() {
-    Logger.log('ここまでは来てることを確認。');
+    const achievements = this.togglRepository.loadTwoMonth(this.settings);
+    this.spreadSheetRepoitory.register(achievements);
   }
 }
