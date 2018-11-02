@@ -1,6 +1,6 @@
-import Settings from '../../domain/config/Settings';
-import TogglRepository from '../../domain/toggl/TogglRepository';
+import TogglRepository from 'src/domain/toggl/TogglRepository';
 import SpreadSheetRepoitory from 'src/domain/spreadsheet/SpreadSheetRepoitory';
+import Settings from '../../../domain/config/Settings';
 
 export default class TogglToSpreadSheetService {
   constructor(

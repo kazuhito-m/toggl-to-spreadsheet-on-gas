@@ -1,5 +1,5 @@
 // import Parameters from "./infrastracture/datasource/config/Parameters";
-import TogglToSpreadSheetService from './application/repoting/TogglToSpreadSheetService';
+import TogglToSpreadSheetService from './application/service/repoting/TogglToSpreadSheetService';
 import TogglDatasource from './infrastracture/datasource/toggl/TogglRepository';
 import SpreadSheetDatasource from './infrastracture/datasource/spreadsheet/SpreadSheetDatasource';
 
@@ -12,11 +12,11 @@ export default class GasApplication {
     // TODO パラメータから取得
     const settings = { togglToken: 'test' };
 
-    const syncRemover = new TogglToSpreadSheetService(
+    const service = new TogglToSpreadSheetService(
       new TogglDatasource(),
       new SpreadSheetDatasource(),
       settings,
     );
-    syncRemover.export();
+    service.export();
   }
 }

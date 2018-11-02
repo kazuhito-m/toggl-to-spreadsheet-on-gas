@@ -15,6 +15,6 @@
     "target": "es5"
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*", "tests/application/service/repoting/TogglToSpreadSheetService.spec.ts"
   ]
 }
