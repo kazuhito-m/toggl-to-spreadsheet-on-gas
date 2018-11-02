@@ -5,7 +5,7 @@ import Settings from '../../../domain/config/Settings';
 export default class TogglDatasource implements TogglRepository {
   public loadTwoMonth(settings: Settings): Achievements {
     // TODO 実装。
-    console.log('TogglDatasource.loadTwoMonth() 未実装');
+    Logger.log('TogglDatasource.loadTwoMonth() 未実装');
     return new Achievements([]);
   }
 }
