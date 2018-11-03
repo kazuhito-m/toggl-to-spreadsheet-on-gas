@@ -1,5 +1,5 @@
 export default class TextableDate {
-  constructor(private readonly value: Date) {}
+  constructor(public readonly value: Date) {}
 
   public format(): string {
     const date = this.value;
