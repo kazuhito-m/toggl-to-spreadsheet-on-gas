@@ -1,5 +1,5 @@
-import Achievements from '../toggl/Achievements';
+import MonthReports from '../report/MonthReports';
 
 export default interface SpreadSheetRepoitory {
-  register(achievements: Achievements): void;
+  register(monthReports: MonthReports): void;
 }
