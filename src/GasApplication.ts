@@ -10,7 +10,11 @@ export default class GasApplication {
     // const settings = parameters.loadSettings();
 
     // TODO パラメータから取得
-    const settings = { togglToken: 'test' };
+    const settings = {
+      togglToken: 'test',
+      projectId: 'pjidTest',
+      workspaceId: 'wsid',
+    };
 
     const service = new TogglToSpreadSheetService(
       new TogglDatasource(),
