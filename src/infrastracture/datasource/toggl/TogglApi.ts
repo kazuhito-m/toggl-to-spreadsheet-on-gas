@@ -3,7 +3,7 @@ import DetailsResponse from './response/DetailsResponse';
 import DateRange from '../../../domain/date/DateRange';
 
 export default class TogglApi {
-  private static readonly URL_HEAD = 'https://toggl.com/reports/api';
+  private static readonly URL_HEAD = 'https://toggl.com/reports/api/v2';
 
   public getRequestDetails(
     dateRange: DateRange,
@@ -23,7 +23,7 @@ export default class TogglApi {
       'Authorization': 'Basic ' + Utilities.base64Encode(user + ':' + pass),
       'Content-Type': 'application/json'
     };
-    const param = { 'headers': headers };
+    const param = { headers: headers };
     return param;
   }
 
