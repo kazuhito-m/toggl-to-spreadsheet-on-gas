@@ -4,9 +4,9 @@ export default interface DetailsResponseData {
   tid?: number;
   uid: number;
   description: string;
-  start: Date;
-  end: Date;
-  updated: Date;
+  start: string;
+  end: string;
+  updated: string;
   dur: number;
   user: string;
   use_stop: boolean;

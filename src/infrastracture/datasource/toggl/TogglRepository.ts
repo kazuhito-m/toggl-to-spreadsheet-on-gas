@@ -8,6 +8,7 @@ import AchievementsFactory from './AchievementsFactory';
 export default class TogglDatasource implements TogglRepository {
   private readonly api = new TogglApi();
   private readonly factory = new AchievementsFactory();
+
   public loadTwoMonth(settings: Settings): Achievements {
     const nowMonth = DateRange.nowMonth();
     const lastMonth = nowMonth.previousMonth();

@@ -1,8 +1,8 @@
-import MonthAchievements from './MonthAchievements';
+import MonthAchievement from './MonthAchievement';
 export default class Achievements {
-  constructor(private readonly achevements: MonthAchievements[]) {}
+  constructor(private readonly achevements: MonthAchievement[]) {}
 
-  public get list(): MonthAchievements[] {
+  public get list(): MonthAchievement[] {
     return this.achevements;
   }
 }
