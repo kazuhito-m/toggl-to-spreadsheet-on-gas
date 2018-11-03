@@ -10,7 +10,8 @@
     "upload": "gapps upload",
     "watch": "watch 'npm run build && npm run upload' src/",
     "build": "webpack",
-    "test": "jest"
+    "test": "jest",
+    "all_clean_deploy": "rm -rf package-lock.json node_modules/ && npm install && npm test && npm run build && npm run upload"
   },
   "repository": {
     "type": "git",
@@ -39,7 +40,7 @@
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "watch": "^1.0.2",
-    "webpack": "^3.5.6",
+    "webpack": "^3.10.0",
     "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"
   },
