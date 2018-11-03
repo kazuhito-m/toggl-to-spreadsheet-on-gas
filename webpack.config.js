@@ -2,6 +2,7 @@ const GasPlugin = require('gas-webpack-plugin');
 const es3ifyPlugin = require('es3ify-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
   entry: __dirname + '/src/index.ts',
   output: {
     path: __dirname + '/dist',

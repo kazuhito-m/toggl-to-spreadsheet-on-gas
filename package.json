@@ -39,7 +39,7 @@
     "tslint": "^5.7.0",
     "typescript": "^2.5.2",
     "watch": "^1.0.2",
-    "webpack": "^3.5.6",
+    "webpack": "^4.24.0",
     "webpack-cli": "^3.1.2",
     "webpack-node-externals": "^1.7.2"
   },
