@@ -60,7 +60,9 @@
       "ts-jest": {
         "diagnostics": false
       },
-      "Logger": {}
+      "Logger": {},
+      "Utilities": {},
+      "UrlFetchApp": {}
     }
   }
 }

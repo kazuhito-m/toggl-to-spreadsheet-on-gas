@@ -5,6 +5,8 @@ import SpreadSheetDatasource from '../../../../src/infrastracture/datasource/spr
 describe('TogglToSpreadSheetServiceのテスト', () => {
   beforeEach(() => {
     Logger.log = jest.fn(val => console.log(val));
+    Utilities.base64Encode = jest.fn(val => btoa(val));
+    UrlFetchApp.fetch = jest.fn((val, p) => { return { getContentText: () => '{}' }; } );
   });
 
   it('ローカルでgasの実装が動くかのスモークテスト', () => {
