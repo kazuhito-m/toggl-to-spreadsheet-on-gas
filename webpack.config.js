@@ -23,6 +23,5 @@ module.exports = {
   plugins: [
     new GasPlugin(),
     new es3ifyPlugin(),
-  ],
-  target: 'node'
+  ]
 };
