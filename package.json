@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas#readme",
   "devDependencies": {
-    "@types/google-apps-script": "^0.0.31",
+    "@types/google-apps-script": "^0.0.42",
     "awesome-typescript-loader": "^3.5.0",
     "es3ify-webpack-plugin": "^0.0.1",
     "gas-webpack-plugin": "^0.3.0",
