@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas.git"
+    "url": "git+https://github.com/kazuhito-m/gas-toggl-to-spreadsheet.git"
   },
   "keywords": [
     "node",
@@ -23,9 +23,9 @@
     "webpack"
   ],
   "bugs": {
-    "url": "https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas/issues"
+    "url": "https://github.com/kazuhito-m/gas-toggl-to-spreadsheet/issues"
   },
-  "homepage": "https://github.com/kazuhito-m/toggl-to-spreadsheet-on-gas#readme",
+  "homepage": "https://github.com/kazuhito-m/gas-toggl-to-spreadsheet#readme",
   "devDependencies": {
     "@types/google-apps-script": "^0.0.62",
     "awesome-typescript-loader": "^5.2.1",
