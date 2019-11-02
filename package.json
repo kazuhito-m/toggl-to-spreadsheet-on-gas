@@ -1,7 +1,7 @@
 {
-  "name": "toggl-to-spreadsheet-on-gas",
+  "name": "gas-toggl-to-spreadsheet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Google App Script to post toggl data to GoogleSpreadSheet",
   "main": "src/index.ts",
   "author": "Kazuhito Miura",
   "license": "MIT",
