@@ -1,5 +1,5 @@
 import TextableDate from './TextableDate';
-import NowGenerator from './NowGenerator';
+import NowGenerator from '@/domain/date/NowGenerator';
 export default class DateRange {
   public static generator: NowGenerator = { now: (): Date => new Date() };
 

@@ -11,7 +11,11 @@
     "allowJs": true,
     "declaration": false,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "downlevelIteration": true,
 
     "strict": true,

@@ -1,4 +1,4 @@
-import DayTotal from './DayTotal';
+import DayTotal from '@/domain/report/DayTotal';
 export default class MonthReport {
   constructor(private readonly dayTotals: DayTotal[]) {}
 

@@ -1,5 +1,5 @@
-import SpreadSheetRepoitory from '../../../domain/spreadsheet/SpreadSheetRepoitory';
-import MonthReports from '../../../domain/report/MonthReports';
+import SpreadSheetRepoitory from '@/domain/spreadsheet/SpreadSheetRepoitory';
+import MonthReports from '@/domain/report/MonthReports';
 
 export default class SpreadSheetDatasource implements SpreadSheetRepoitory {
   public register(monthReports: MonthReports) {

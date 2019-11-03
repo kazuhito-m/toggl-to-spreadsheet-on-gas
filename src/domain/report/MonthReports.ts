@@ -1,5 +1,5 @@
-import Achievements from '../toggl/Achievements';
-import MonthReport from './MonthReport';
+import Achievements from '@/domain/toggl/Achievements';
+import MonthReport from '@/domain/report/MonthReport';
 export default class MonthReports {
   constructor(public readonly achievements: Achievements) {}
 

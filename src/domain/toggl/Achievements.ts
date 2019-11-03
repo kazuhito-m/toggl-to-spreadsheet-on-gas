@@ -1,4 +1,4 @@
-import MonthAchievement from './MonthAchievement';
+import MonthAchievement from '@/domain/toggl/MonthAchievement';
 export default class Achievements {
   constructor(private readonly achevements: MonthAchievement[]) {}
 

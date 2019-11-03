@@ -1,5 +1,5 @@
-import CotalCurrency from './TotalCurrency';
-import DetailsResponseData from './DetailsResponseData';
+import CotalCurrency from '@/infrastracture/datasource/toggl/response/TotalCurrency';
+import DetailsResponseData from '@/infrastracture/datasource/toggl/response/DetailsResponseData';
 
 export default interface DetailsResponse {
   total_grand: number;
