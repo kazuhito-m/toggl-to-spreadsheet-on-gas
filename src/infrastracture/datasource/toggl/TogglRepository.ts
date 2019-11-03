@@ -1,7 +1,7 @@
 import TogglRepository from 'src/domain/toggl/TogglRepository';
-import Achievements from '../../../domain/toggl/Achievements';
-import Settings from '../../../domain/config/Settings';
-import DateRange from '../../../domain/date/DateRange';
+import Achievements from '@/domain/toggl/Achievements';
+import Settings from '@/domain/config/Settings';
+import DateRange from '@/domain/date/DateRange';
 import TogglApi from './TogglApi';
 import AchievementsFactory from './AchievementsFactory';
 
