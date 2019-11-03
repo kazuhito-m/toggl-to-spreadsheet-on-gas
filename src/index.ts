@@ -1,6 +1,10 @@
-import GasApplication from './GasApplication';
+// import GasApplication from './GasApplication';
+
+// global.main = () => {
+//   const application = new GasApplication();
+//   application.run();
+// };
 
 global.main = () => {
-  const application = new GasApplication();
-  application.run();
+  Logger.log('test');
 };

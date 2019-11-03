@@ -7,11 +7,11 @@
   "license": "MIT",
   "scripts": {
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
-    "upload": "gapps upload",
     "watch": "watch 'npm run build && npm run upload' src/",
     "build": "webpack --mode production",
     "test": "jest",
-    "all_clean_deploy": "rm -rf package-lock.json node_modules/ && npm install && npm test && npm run build && npm run upload"
+    "deploy": "cp ./appsscript.json ./src && clasp push -f && clasp deploy",
+    "all_clean_deploy": "rm -rf package-lock.json node_modules/ ./dist/ && npm install && npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
