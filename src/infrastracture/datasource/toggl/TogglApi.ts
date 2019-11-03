@@ -1,5 +1,5 @@
 import Settings from '@/domain/config/Settings';
-import DetailsResponse from './response/DetailsResponse';
+import DetailsResponse from '@/infrastracture/datasource/toggl/response/DetailsResponse';
 import DateRange from '@/domain/date/DateRange';
 
 export default class TogglApi {
