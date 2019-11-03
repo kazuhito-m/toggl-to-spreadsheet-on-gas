@@ -1,6 +1,6 @@
-import Settings from '../../../domain/config/Settings';
+import Settings from '@/domain/config/Settings';
 import DetailsResponse from './response/DetailsResponse';
-import DateRange from '../../../domain/date/DateRange';
+import DateRange from '@/domain/date/DateRange';
 
 export default class TogglApi {
   private static readonly URL_HEAD = 'https://toggl.com/reports/api/v2';
